@@ -1,88 +1,109 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #121212;
-    color: #333333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    padding: 1rem;
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #333333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1rem;
 }
 
+/* Main Container Card */
 .container {
-    background-color: #ffffff;
-    width: 100%;
-    max-width: 420px;
-    padding: 2.5rem 2rem;
-    border-radius: 12px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
-    text-align: center;
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 420px;
+  padding: 2.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+/* Header & Subtitle Formatting */
+.app-header {
+  margin-bottom: 1.75rem;
 }
 
 h1 {
-    font-size: 1.8rem;
-    margin-bottom: 1.5rem;
-    color: #121212;
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+  color: #1a1a1a;
 }
 
-h2 {
-    font-size: 1.1rem;
-    margin-bottom: 0.75rem;
-    color: #555555;
-    text-align: center;
+.subtitle {
+  font-size: 0.95rem;
+  color: #555555;
+  line-height: 1.4;
 }
 
+/* Input Section */
 .input-section {
-    display: flex;
-    gap: 0.75rem;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
 }
 
 input[type="text"] {
-    flex: 1;
-    padding: 0.75rem 1rem;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 0.95rem;
-    outline: none;
+  flex: 1;
+  padding: 0.7rem 0.9rem;
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  outline: none;
 }
 
+input[type="text"]:focus {
+  border-color: #333333;
+}
+
+/* Base Buttons */
 button {
-    padding: 0.75rem 1rem;
-    background-color: #121212;
-    color: #ffffff;
-    border: none;
-    border-radius: 6px;
-    font-size: 0.95rem;
-    cursor: pointer;
-    transition: background-color 0.2s ease;
+  padding: 0.7rem 1.1rem;
+  background-color: #121212;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
 }
 
 button:hover {
-    background-color: #333333;
+  background-color: #333333;
 }
 
 #pickBtn {
-    width: 100%;
-    margin-top: 1rem;
-    font-weight: bold;
+  width: 100%;
+  margin-top: 1rem;
+  font-weight: bold;
 }
 
+/* Queue List Section */
 .list-section {
-    text-align: center;
-    margin-bottom: 1.5rem;
+  text-align: center;
+  margin-bottom: 1.75rem;
+  min-height: 50px;
 }
+
+.list-section h2 {
+  font-size: 1.1rem;
+  color: #444444;
+  margin-bottom: 0.75rem;
+  text-align: center;
+}
+
 #movieList {
-    list-style: none;
-    max-height: 180px;
-    overFlow-y: auto;
+  list-style: none;
+  max-height: 180px;
+  overflow-y: auto;
 }
 
 #movieList li {
@@ -90,32 +111,38 @@ button:hover {
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem 0;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #eeeeee;
 }
 
 .delete-btn {
   background: none;
   border: none;
-  color: #888;
-  cursor: pointer;
-  font-size: 0.9rem;
+  color: #888888;
   padding: 0.2rem 0.4rem;
+  font-size: 0.9rem;
 }
 
 .delete-btn:hover {
-    color: #e53935;
-    background: none;
+  color: #e53935;
+  background: none;
 }
 
+/* Result Section */
 .result-section {
-    margin-top: 1.5rem;
-    padding-top: 1rem;
-    border-top: 1px solid #eee;
+  margin-top: 1.75rem;
+  padding-top: 1.25rem;
+  border-top: 1px dashed #e2e2e2;
+}
+
+.result-section h2 {
+  font-size: 1.1rem;
+  color: #555555;
+  text-align: center;
 }
 
 #winnerDisplay {
-    font-size: 1.1rem;
-    font-weight: bold;
-    color: #2e7d32;
-    margin-top: 0.5rem;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #2e7d32;
+  margin-top: 0.5rem;
 }

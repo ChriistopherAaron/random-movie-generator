@@ -1,39 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Randomize Movie Generator</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Movie Generator</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main class="container">
-        <h1>Movie Night Picker 🎬</h1>
-        <p><strong>Having trouble deciding what to watch? Let us help!</strong></p>
-        <p>Enter movie choices below and test your luck!</p>
-       
-        <!-- 1. Input area to type and submit movie options -->
-         <section class="input-section">
-            <input type="text" id="movieInput" placeholder="Enter a movie title...">
-            <button id="addBtn">Add Movie</button>
-        </section>
 
-        <!-- 2. Display area for the list of added movies -->
-         <section class="list-section">
-            <h2>Movie Queue</h2>
-            <ul id="movieList"></ul>
-         </section>
+  <main class="container">
+    <header class="app-header">
+      <h1>Movie Night Picker 🎬</h1>
+      <p class="subtitle">
+        <strong>Having trouble deciding what to watch?</strong><br>
+        Let us help! Enter movie choices below and test your luck! 🍿
+      </p>
+    </header>
 
-         <!-- 3. Trigger button to pick a movie -->
-         <button id="pickBtn">Pick a Movie!</button>
+    <!-- 1. Input area to type and submit movie options -->
+    <section class="input-section">
+      <input type="text" id="movieInput" placeholder="Enter a movie title...">
+      <button id="addBtn">Add Movie</button>
+    </section>
 
-         <!-- 4. Display area for the randomly selected winner -->
-          <section class="result-section">
-            <h2>Tonight's Winner:</h2>
-            <p id="winnerDisplay">Add some movies and hit pick!</p>
-          </section>
-    </main>
+    <!-- 2. Display area for the list of added movies -->
+    <section class="list-section">
+      <h2>Movie Queue</h2>
+      <ul id="movieList"></ul>
+    </section>
 
-    <script src="script.js"></script>
+    <!-- 3. Trigger button to pick a movie -->
+    <button id="pickBtn">Pick a Movie!</button>
+
+    <!-- 4. Display area for the randomly selected winner -->
+    <section class="result-section">
+      <h2>Tonight's Winner:</h2>
+      <p id="winnerDisplay">Add some movies and hit pick!</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
