@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Randomize Movie Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <main class="container">
+        <h1>Movie Night Picker</h1>
+       
+        <!-- Input area to type and submit movie options -->
+         <section class="input-section">
+            <input type="text" id="movieInput" placeholder="Enter a movie title...">
+            <button id="addBtn">Add Movie</button>
+        </section>
+
+        <!-- Display area for the list of added movies -->
+         <section class="list-section">
+            <h2>Movie Queue</h2>
+            <ul id="movieList"></ul>
+         </section>
+
+         <!-- Trigger button to pick a movie -->
+         <button id="pickBtn">Pick a Movie!</button>
+
+         <!-- Display area for the randomly selected winner -->
+          <section class="result-section">
+            <h2>Tonight's Winner:</h2>
+            <p id="winnerDisplay">Add some movies and hit pick!</p>
+          </section>
+    </main>
+</body>
+</html>
