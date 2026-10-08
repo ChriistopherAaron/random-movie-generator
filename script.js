@@ -16,11 +16,35 @@ addBtn.addEventListener('click', () => {
         // Add to our array
         movies.push(movieTitle);
 
-        // Create a new list item for the DOM
+        // Create the list item wrapper
         const li = document.createElement('li');
-        li.textContent = movieTitle;
-        movieList.appendChild(li);
 
+        // Create text span for movie titles
+        const titleSpan = document.createElement('span');
+        titleSpan.textContent = movieTitle;
+
+        // Create the delete button
+        const deleteBtn = document.createElement('button');
+        deleteBtn.textContent = '❌';
+        deleteBtn.classList.add('delete-btn');
+
+        // Add delete button click logic
+        deleteBtn.addEventListener('click', () => {
+            // Remove from array
+            const index = movies.indexOf(movieTitle);
+            if (index > -1) {
+                movies.splice(index, 1);
+            }
+
+            // Remove <li> from DOM
+            li.remove();
+        });
+
+        // Assemble and append list
+        li.appendChild(titleSpan);
+        li.appendChild(deleteBtn);
+        movieList.appendChild(li);
+       
         // Clear the input field
         movieInput.value = '';
     }
