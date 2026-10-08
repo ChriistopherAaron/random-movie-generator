@@ -25,3 +25,19 @@ addBtn.addEventListener('click', () => {
         movieInput.value = '';
     }
 });
+
+// Pick a Random Movie from the array
+pickBtn.addEventListener('click', () => {
+    // Check if there are any movies in the array first
+    if (movies.length === 0) {
+        winnerDisplay.textContent = 'Please add at least one movie first!';
+        return;
+    }
+
+    // Generate a random index based on array length
+    const randomIndex = Math.floor(Math.random() * movies.length);
+    const selectedMovie = movies[randomIndex];
+
+    // Display the winning movie
+    winnerDisplay.textContent = `🎬 ${selectedMovie}!`;
+});
