@@ -1,0 +1,18 @@
+#movieList li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+  padding: 0.2rem 0.5rem;
+}
+
+.delete-btn:hover {
+  opacity: 0.7;
+}
